@@ -1,23 +1,27 @@
-*,
-::before,
-::after {
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
+body {
+    max-height: 100vh;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template: 1fr 6fr / 1fr 4fr;
+    font-family: 'Tilt Neon', sans-serif;
 }
 
-.container div {
-    padding: 15px;
-    font-size: 32px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: white;
-}
+/* .container {
+    display: grid;
+    /* grid-template: 1fr 6fr / 1fr 4fr;
+    max-height: 100vh;
+    text-align: center;
+    font-family: 'Tilt Neon', sans-serif; */
 
 .sidebar {
     background-color: dodgerblue;
@@ -36,6 +40,7 @@
 .main-menu ul {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
+    
 }
 
 .secondary-menu ul {
@@ -59,11 +64,11 @@ li:hover {
 
 
 .header {
-    background-color: rgb(244, 250, 255);
+    background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 7fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
-    grid-column: 2 / 3;
+    
 }
 
 .header div p {
