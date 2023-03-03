@@ -60,6 +60,8 @@ nav {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 li:hover {
@@ -76,55 +78,70 @@ header {
     grid-column: 2 / 3;
     grid-template-columns: 7fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
-    
+    padding: 24px;   
 }
 
-.header div p {
-    color:black;
-    font-size: 16px;
-}
-
-.header .search-bar {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-column: 1 / 3;
-    height: 12px;
+header .search-bar {
+    display: flex;
+    grid-column: 1 / 2;
     align-items: center;
 }
 
-.header .search-bar button {
+header .search-bar button {
     background: none;
     border: none;
-    padding-right: 6px;
+    font-size: 24px;
+    /* justify-self: start;
+    padding-left: 2rem; */
 }
 
-.header .search-bar input[type=text] {
+header .search-bar input[type=text] {
     border: none;
     background-color: rgba(233, 237, 245, 0.455);
     border-radius: 15px;
-    padding: 4px;
+    padding-left: 12px;
+    height: 2rem;
+    width: 100%;
 }
 
-.header .profile {
+header .profile {
     grid-column: 3 / 5;
-}
-
-.header .welcome {
-    grid-column: 1 / 2
-}
-
-.header .options {
-    grid-column: 4 / 5;
-    align-self: center;
     display: flex;
-    padding: 25px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+header .profile p {
+    font-weight: bold;
+}
+
+header .profile img:hover {
+    cursor: pointer;
+}
+
+header .profile p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .welcome {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+header .options {
+    display: grid;
+    grid-column: 3 / 5;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    /* gap: 24px; */
 }
 
 .options > button {
-    flex: 0 1 30%;
     padding: 12px;
+    /* width: 5vw; */
     background-color: dodgerblue;
     color: white;
     font-weight: bold;
@@ -136,6 +153,7 @@ button:hover {
     cursor: pointer;
 }
 
+/* Main content */
 main {
     display: grid;
     grid-template-columns: 3fr 1fr;
