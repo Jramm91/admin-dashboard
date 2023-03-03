@@ -16,21 +16,26 @@ body {
     font-family: 'Tilt Neon', sans-serif;
 }
 
-/* .container {
-    display: grid;
-    /* grid-template: 1fr 6fr / 1fr 4fr;
-    max-height: 100vh;
-    text-align: center;
-    font-family: 'Tilt Neon', sans-serif; */
-
 .sidebar {
     background-color: dodgerblue;
     display: grid;
     grid-row: 1 / 3;
+    color: white;
 }
 
 .sidebar .logo {
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-self: start;
+    align-items: center;
+}
+
+.sidebar .logo p {
+    font-size: 24px;
+}
+
+.sidebar .logo img {    
+    height: clamp(3rem, 50%, 10rem);
 }
 
 .menu {
