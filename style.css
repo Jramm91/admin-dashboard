@@ -168,6 +168,8 @@ main {
     text-align: left;
 }
 
+/* Projects Card Section */
+
 main .projects-container {
     display: flex;
     flex-direction: column;
@@ -183,12 +185,39 @@ main .projects-container .project-cards-container {
 }
 
 main .projects-container .project-cards-container .project-card {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
     background-color: white;
     padding: 16px;
     border-radius: 10px;
+    max-width: 250px;
+    max-height: 250px;
+    border-left: solid 10px yellow;
+}
+
+main .projects-container .project-cards-container .project-card > p {
+    align-self: start;
+    vertical-align: text-top;
+    
 }
 
 
+main .projects-container .project-cards-container .project-card .project-card-icons {
+    justify-self: end;
+    align-self: self-end;
+}
+
+main .projects-container .project-cards-container .project-card .project-card-icons:hover {
+    cursor: pointer;
+}
+
+/* Announcements Section */
+
+
+/* News Feed Section */
+
+
+/* Footer Section */
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
