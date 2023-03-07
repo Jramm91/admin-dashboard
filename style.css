@@ -295,5 +295,13 @@ footer {
     justify-items: center;
     align-items: center;
     grid-column: 1 / 3;
+    gap: 32px;
 }
 
+footer p {
+    justify-self: end;
+}
+
+footer a {
+    justify-self: start;
+}
